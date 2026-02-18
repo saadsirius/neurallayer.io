@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuralLayer — The Cognitive Operating System</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neural-purple: oklch(0.58 0.22 285);
+            --electric-magenta: oklch(0.65 0.28 310);
+            --true-dark: oklch(0.12 0.015 260);
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--true-dark);
+            color: oklch(0.98 0.002 260);
+        }
+        .glow-purple { box-shadow: 0 0 40px oklch(0.58 0.22 285 / 0.15); }
+        .bg-charcoal { background-color: oklch(0.16 0.018 265); }
+        .text-purple { color: var(--neural-purple); }
+        .text-magenta { color: var(--electric-magenta); }
+        .btn-primary {
+            background-color: var(--neural-purple);
+            transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px oklch(0.58 0.22 285 / 0.4);
+        }
+    </style>
+</head>
+<body class="min-h-screen selection:bg-purple-500/30">
+    <nav class="flex justify-between items-center p-8 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-tighter flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-[var(--neural-purple)] glow-purple"></div>
+            NeuralLayer<span class="text-purple">.io</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium opacity-60">
+            <a href="#features" class="hover:opacity-100 transition-opacity">Features</a>
+            <a href="#science" class="hover:opacity-100 transition-opacity">Science</a>
+        </div>
+        <a href="https://saadlamkadam.me/memori/" class="btn-primary px-6 py-2 rounded-full text-sm font-semibold">
+            Launch Memori
+        </a>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-8 py-24 text-center">
+        <div class="inline-block px-4 py-1.5 rounded-full border border-purple-500/20 text-xs font-semibold tracking-widest uppercase mb-8 text-purple bg-purple-500/5">
+            Introducing Memori
+        </div>
+        <h1 class="text-6xl md:text-8xl font-bold tracking-tight mb-8 leading-[0.9]">
+            The cognitive <br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--neural-purple)] to-[var(--electric-magenta)]">operating system.</span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-lg md:text-xl opacity-60 mb-12 leading-relaxed">
+            NeuralLayer is a signal overlay and state-cycle trainer that runs under whatever you're already doing. One big action to enforce golden paths and binaural cycles.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="https://saadlamkadam.me/memori/" class="btn-primary px-10 py-4 rounded-xl text-lg font-bold w-full sm:w-auto">
+                Start Focus Session
+            </a>
+            <a href="#features" class="px-10 py-4 rounded-xl text-lg font-bold border border-white/10 hover:bg-white/5 transition-colors w-full sm:w-auto">
+                Explore Cycles
+            </a>
+        </div>
+    </main>
+
+    <section id="features" class="max-w-7xl mx-auto px-8 py-32 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-charcoal p-8 rounded-3xl border border-white/5 hover:border-purple-500/30 transition-all group">
+            <div class="w-12 h-12 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple" viewBox="0 0 256 256"><path fill="currentColor" d="M112 48a12 12 0 1 1 12 12a12 12 0 0 1-12-12m12 44a12 12 0 1 0 12 12a12 12 0 0 0-12-12m0 88a12 12 0 1 0 12 12a12 12 0 0 0-12-12"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Focus Mode</h3>
+            <p class="opacity-50 leading-relaxed">Integrated Pomodoro with 18Hz low-beta spectrum. Synchronized state cycles for deep cognitive work.</p>
+        </div>
+        <div class="bg-charcoal p-8 rounded-3xl border border-white/5 hover:border-purple-500/30 transition-all group">
+            <div class="w-12 h-12 rounded-2xl bg-magenta-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-magenta" viewBox="0 0 256 256"><path fill="currentColor" d="M226.79 119.85c-11.83-20.1-29.35-31.85-48-31.85a4 4 0 0 0 0 8c16.14 0 31.57 10.45 42.16 28.45s14.89 40.78 11.43 61.27a111.9 111.9 0 0 1-46.12 73a4 4 0 1 0 4.61 6.54a119.8 119.8 0 0 0 49.39-78.18c3.7-22 2-44.59-13.47-71.23"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Meditation</h3>
+            <p class="opacity-50 leading-relaxed">Ramp from 10Hz alpha to 7Hz theta. Stabilize your mental state through curated binaural presets.</p>
+        </div>
+        <div class="bg-charcoal p-8 rounded-3xl border border-white/5 hover:border-purple-500/30 transition-all group">
+            <div class="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-400" viewBox="0 0 256 256"><path fill="currentColor" d="M235.54 150.21a104.22 104.22 0 0 1-37 52.13a104 104 0 0 1-155.65-115.65a104.22 104.22 0 0 1 52.13-37a12 12 0 0 1 15.83 15.83a80 80 0 1 0 108.86 108.86a12 12 0 0 1 15.83 15.83"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Sleep Ramp</h3>
+            <p class="opacity-50 leading-relaxed">Progressive 12Hz to 3Hz delta ramp. Designed for deep recovery and neural reset.</p>
+        </div>
+    </section>
+
+    <footer class="max-w-7xl mx-auto px-8 py-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 opacity-40 text-sm">
+        <div>© 2026 NeuralLayer.io — A project by Saadsirius</div>
+        <div class="flex gap-8">
+            <a href="https://github.com/saadsirius/memori" class="hover:text-white transition-colors">GitHub</a>
+            <a href="#" class="hover:text-white transition-colors">Safety Guide</a>
+        </div>
+    </footer>
+</body>
+</html>
